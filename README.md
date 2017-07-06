@@ -50,3 +50,21 @@ EXAMPLE:
         [3]Computers in industry
         [40]Big data indexing
 
+
+        Another example: 
+        %wagner> bwtsearch ~MyAccount/XYZ/dummy.bwt dummy.idx "in "
+        The output should be: 
+        [3]Computers in industry
+
+        And the last example: 
+        %wagner> bwtsearch ~MyAccount/XYZ/dummy.bwt dummy.idx " in" "ata"
+        The output should be: 
+        [40]Big data indexing
+
+
+
+Use the make command to compile solution.  A makefile is provided. The solution will be compiled and run on a typical CSE Linux machine.
+
+Performance:
+
+Your solution will be marked based on space and runtime performance. Your soluton will not  be tested against any BWT encoded files that are larger than 160MB.    Runtime memory is assumed to be always less than 10MB. Runtime memory consumption will be measured by valgrind massif with the option  --pages-as-heap=yes, i.e., all the memory used by your program will be measured.  Any solution that violates this memory requirement will receive zero points for that query test. Any solution that runs for more than 120 seconds on a machine with similar specification  as wagner for the first query on a given BWT file will be killed, and will receive zero points for the queries for that BWT file.   After that any solution that runs for more than 30 seconds for any one of the subsequent queries on that BWT file will be killed. 
