@@ -49,8 +49,7 @@ EXAMPLE:
         [3]Computers in industry
         [3]Computers in industry
         [40]Big data indexing
-
-
+        
         Another example: 
         %wagner> bwtsearch ~MyAccount/XYZ/dummy.bwt dummy.idx "in "
         The output should be: 
